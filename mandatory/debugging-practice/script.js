@@ -96,7 +96,7 @@ function render() {
     cell5.appendChild(deleteBut);
     deleteBut.className = "btn btn-warning";
     deleteBut.innerHTML = "Delete";
-    deleteBut.addEventListener("clicks", function () {
+    deleteBut.addEventListener("click", function () {
       alert(`You've deleted title: ${myLibrary[i].title}`);
       myLibrary.splice(i, 1);
       render();
